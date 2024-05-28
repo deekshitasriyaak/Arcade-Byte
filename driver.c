@@ -130,28 +130,6 @@ void Hangman() {
        }
     free(guess_word);    
 }
-void SnakeGame(){
-	welcomeArt();
-	
-	do
-	{	
-		switch(mainMenu())
-		{
-			case 0:
-				loadGame();
-				break;
-			case 1:
-				displayHighScores();
-				break;	
-			case 2:
-				controls();
-				break;		
-			case 3:
-				exitYN(); 
-				break;			
-		}		
-	} while(1);	
-}
 void MusicalChair(){
     int numPlayers, round = 1;
     char names[MAX_PLAYERS][MAX_NAME_LENGTH];
@@ -302,10 +280,9 @@ int main() {
         {"Game 1", "Tower of Hanoi", TowerOfHanoi},
         {"Game 2", "Rock Paper Scissors", RockPaperScissors},
         {"Game 3", "Hangman", Hangman},
-        {"Game 4", "Snake Game", SnakeGame},
-        {"Game 5", "Musical Chair", MusicalChair},
-        {"Game 6", "Solitaire", Solitaire},
-        {"Game 7", "Tic Tac Toe", TicTacToe}
+        {"Game 4", "Musical Chair", MusicalChair},
+        {"Game 5", "Solitaire", Solitaire},
+        {"Game 6", "Tic Tac Toe", TicTacToe}
     };
 
     int numGames = sizeof(games) / sizeof(Game);
