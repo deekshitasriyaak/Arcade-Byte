@@ -10,7 +10,7 @@ Game 2 Rock Paper scissor
 Game 3 Tic Tac Toe
 
 Game 4 Musical Chair
-
+ 
 Game 5 Solitaire
 
 Game 6 Hangman
